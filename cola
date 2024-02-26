@@ -1,0 +1,10 @@
+cola_quantity = 100
+buyers = 5
+cola_per_buyer = [20, 40, 40, 59, 46]
+
+for i in range(buyers):
+    if cola_quantity >= cola_per_buyer[i]:
+        cola_quantity -= cola_per_buyer[i]
+        print(f"Покупатель {i+1} купил {cola_per_buyer[i]} штук колы. Осталось {cola_quantity} штук.")
+    else:
+        print(f"Колы не хватило для покупателя {i+1}.")
